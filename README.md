@@ -87,13 +87,13 @@ The program supports 10 different commands by default:
 
 bash
 $ ./fork_demo
-Parent Process ID: 12345
-Child Process ID: 12346
-total 48
-drwxrwxr-x  2 user user 4096 Jun  1 12:34 folder1
-drwxrwxr-x  2 user user 4096 Jun  1 12:34 folder2
--rw-rw-r--  1 user user  123 Jun  1 12:34 file1.txt
-Child process has completed.
+*Parent Process ID: 12345
+*Child Process ID: 12346
+*total 48
+*drwxrwxr-x  2 user user 4096 Jun  1 12:34 folder1
+*drwxrwxr-x  2 user user 4096 Jun  1 12:34 folder2
+*-rw-rw-r--  1 user user  123 Jun  1 12:34 file1.txt
+*Child process has completed.
 
 
 ### 2. **Running date**
