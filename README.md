@@ -179,7 +179,7 @@ bash
 * $ ./fork_demo free
 * Parent Process ID: 12345
 * Child Process ID: 12346
-               * total        used        free      shared  buff/cache   available
+* total        used        free      shared  buff/cache   available
 * Mem:            7.7Gi       3.2Gi       2.3Gi       0.2Gi       2.2Gi       3.8Gi
 * Swap:           2.0Gi       0.0Gi       2.0Gi
 * Child process has completed.
