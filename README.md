@@ -99,104 +99,104 @@ $ ./fork_demo
 ### 2. **Running date**
 
 bash
-$ ./fork_demo date
-Parent Process ID: 12345
-Child Process ID: 12346
-Tue Jun  1 12:34:56 UTC 2021
-Child process has completed.
+* $ ./fork_demo date
+* Parent Process ID: 12345
+* Child Process ID: 12346
+* Tue Jun  1 12:34:56 UTC 2021
+* Child process has completed.
 
 
 ### 3. **Running uname -a**
 
 bash
-$ ./fork_demo uname
-Parent Process ID: 12345
-Child Process ID: 12346
-Linux your-machine 5.4.0-84-generic #94-Ubuntu SMP Tue Jun 15 17:42:59 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
-Child process has completed.
+* $ ./fork_demo uname
+* Parent Process ID: 12345
+* Child Process ID: 12346
+* Linux your-machine 5.4.0-84-generic #94-Ubuntu SMP Tue Jun 15 17:42:59 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+* Child process has completed.
 
 
 ### 4. **Running ps aux**
 
 bash
-$ ./fork_demo ps
-Parent Process ID: 12345
-Child Process ID: 12346
-USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-user     12345  0.1  1.2 123456 23456 pts/0    S+   12:34   0:01 ./fork_demo
-user     12346  0.0  0.1 123456 12345 pts/0    S+   12:34   0:00 ps aux
-Child process has completed.
+* $ ./fork_demo ps
+* Parent Process ID: 12345
+* Child Process ID: 12346
+* USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+* user     12345  0.1  1.2 123456 23456 pts/0    S+   12:34   0:01 ./fork_demo
+* user     12346  0.0  0.1 123456 12345 pts/0    S+   12:34   0:00 ps aux
+* Child process has completed.
 
 
 ### 5. **Running top -n 1**
 
 bash
-$ ./fork_demo top
-Parent Process ID: 12345
-Child Process ID: 12346
-top - 12:34:56 up 1 day,  3:14,  2 users,  load average: 0.50, 0.60, 0.70
-Tasks: 200 total,   1 running,  199 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  5.0 us,  3.0 sy,  0.0 ni, 90.0 id,  1.0 wa,  0.0 hi,  1.0 si,  0.0 st
-Mem:    4096MB total,   1024MB used,   3072MB free,   512MB buffers
-Child process has completed.
+* $ ./fork_demo top
+* Parent Process ID: 12345
+* Child Process ID: 12346
+* top - 12:34:56 up 1 day,  3:14,  2 users,  load average: 0.50, 0.60, 0.70
+* Tasks: 200 total,   1 running,  199 sleeping,   0 stopped,   0 zombie
+* %Cpu(s):  5.0 us,  3.0 sy,  0.0 ni, 90.0 id,  1.0 wa,  0.0 hi,  1.0 si,  0.0 st
+* Mem:    4096MB total,   1024MB used,   3072MB free,   512MB buffers
+* Child process has completed.
 
 
 ### 6. **Running df -h**
 
 bash
-$ ./fork_demo df
-Parent Process ID: 12345
-Child Process ID: 12346
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        50G   12G   35G  25% /
-tmpfs            4.0G  1.0G  3.0G  25% /dev/shm
-Child process has completed.
+* $ ./fork_demo df
+* Parent Process ID: 12345
+* Child Process ID: 12346
+* Filesystem      Size  Used Avail Use% Mounted on
+* /dev/sda1        50G   12G   35G  25% /
+* tmpfs            4.0G  1.0G  3.0G  25% /dev/shm
+* Child process has completed.
 
 
 ### 7. **Running uptime**
 
 bash
-$ ./fork_demo uptime
-Parent Process ID: 12345
-Child Process ID: 12346
-12:34:56 up 1 day,  3:14,  2 users,  load average: 0.50, 0.60, 0.70
-Child process has completed.
+* $ ./fork_demo uptime
+* Parent Process ID: 12345
+* Child Process ID: 12346
+* 12:34:56 up 1 day,  3:14,  2 users,  load average: 0.50, 0.60, 0.70
+* Child process has completed.
 
 
 ### 8. **Running whoami**
 
-bash
-$ ./fork_demo whoami
-Parent Process ID: 12345
-Child Process ID: 12346
-user
-Child process has completed.
+* bash
+* $ ./fork_demo whoami
+* Parent Process ID: 12345
+* Child Process ID: 12346
+* user
+* Child process has completed.
 
 
 ### 9. **Running free -h**
 
 bash
-$ ./fork_demo free
-Parent Process ID: 12345
-Child Process ID: 12346
-              total        used        free      shared  buff/cache   available
-Mem:            7.7Gi       3.2Gi       2.3Gi       0.2Gi       2.2Gi       3.8Gi
-Swap:           2.0Gi       0.0Gi       2.0Gi
-Child process has completed.
+* $ ./fork_demo free
+* Parent Process ID: 12345
+* Child Process ID: 12346
+               * total        used        free      shared  buff/cache   available
+* Mem:            7.7Gi       3.2Gi       2.3Gi       0.2Gi       2.2Gi       3.8Gi
+* Swap:           2.0Gi       0.0Gi       2.0Gi
+* Child process has completed.
 
 
 ### 10. **Unknown Command (Fallback to ls -l)**
 
 bash
-$ ./fork_demo unknown_command
-Unknown command: unknown_command. Defaulting to 'ls -l'.
-Parent Process ID: 12345
-Child Process ID: 12346
-total 48
-drwxrwxr-x  2 user user 4096 Jun  1 12:34 folder1
-drwxrwxr-x  2 user user 4096 Jun  1 12:34 folder2
--rw-rw-r--  1 user user  123 Jun  1 12:34 file1.txt
-Child process has completed.
+* $ ./fork_demo unknown_command
+* Unknown command: unknown_command. Defaulting to 'ls -l'.
+* Parent Process ID: 12345
+* Child Process ID: 12346
+* total 48
+* drwxrwxr-x  2 user user 4096 Jun  1 12:34 folder1
+* drwxrwxr-x  2 user user 4096 Jun  1 12:34 folder2
+* -rw-rw-r--  1 user user  123 Jun  1 12:34 file1.txt
+* Child process has completed.
 
 
 ## *Conclusion*
