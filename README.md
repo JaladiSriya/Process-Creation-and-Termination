@@ -109,39 +109,6 @@ Child exited with non-zero code: 127
 
 ---
 
-## *Scoring Criteria*
-
-| *Criteria*                          | *Ratings*             | *Points* |
-| ------------------------------------- | ----------------------- | ---------- |
-| *Functionality*                     | Excellent (Full Points) | *10 pts* |
-| *Code Quality*                      | Excellent (Full Points) | *5 pts*  |
-| *Correctness/Logic*                 | Excellent (Full Points) | *5 pts*  |
-| *Comments & Documentation (3 pts)*  | Excellent (Full Points) | *3 pts*  |
-| *Edge Cases/Error Handling (2 pts)* | Excellent (Full Points) | *2 pts*  |
-
-### *Explanation for Scoring:*
-
-1. *Functionality (10/10)*:
-
-   * The program meets all the functionality requirements: creating a child process, executing a command in the child, and waiting for it in the parent.
-
-2. *Code Quality (5/5)*:
-
-   * The code follows clean and readable practices. It uses appropriate naming conventions, modularity with helper functions, and proper use of system calls.
-
-3. *Correctness/Logic (5/5)*:
-
-   * The logic is sound and efficient. Forking, executing commands, and waiting for the child are implemented correctly. The error handling is well-managed.
-
-4. *Comments & Documentation (3/3)*:
-
-   * The program is well-documented. The code includes a comprehensive header comment, in-line explanations, and examples for usage.
-
-5. *Edge Cases/Error Handling (2/2)*:
-
-   * The code handles edge cases such as interruptions during waitpid() and failure of execvp() in the child process. The program uses _exit() to cleanly exit the child on error.
-
----
 
 ## *Conclusion*
 
